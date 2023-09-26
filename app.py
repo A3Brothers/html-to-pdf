@@ -3,7 +3,8 @@ import pdfkit
 
 app = Flask(__name__)
 
-# Configure pdfkit with the path to the wkhtmltopdf executable
+# Configuration of pdfkit with the wkhtmltopdf Executable Path
+# To find the path to wkhtmltopdf on macOS and Linux, you can use the "which wkhtmltopdf" command.
 config = pdfkit.configuration(wkhtmltopdf="/usr/local/bin/wkhtmltopdf")
 
 
